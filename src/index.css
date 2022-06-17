@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap');
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f87508 #ffffff;
+  }
+
+  body{
+    user-select: none;
+    /* overflow-x:hidden; */
+    overflow-x:hidden;
+  }
+
+ 
+  *::-webkit-scrollbar {
+  background-color: rgba(0,0,0,0,0.1);
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.5);
+ 
+    border-radius: 0px;
+  
+  } 
+
+
+
+
