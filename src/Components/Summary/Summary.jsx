@@ -45,7 +45,7 @@ const Summary = () => {
 
         <div className="flex justify-center items-center text-center flex-col">
           <h2 className="sm:text-5xl text-xl">
-            ...White cat with a white rat?
+            ...White cat with a white lion?
           </h2>
         </div>
       </div>
