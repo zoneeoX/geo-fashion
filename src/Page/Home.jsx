@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import img1 from "../Images/img1.jpg";
-import img2 from "../Images/img2.jpg";
-import img3 from "../Images/img3.jpg";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
 import Summary from "../Components/Summary/Summary";
