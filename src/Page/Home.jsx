@@ -6,7 +6,6 @@ import img3 from "../Images/img3.jpg";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
 import Summary from "../Components/Summary/Summary";
-import Baju from "../Images/baju.mp4";
 import Sun from "../Images/sunglasses.jpg";
 
 function Home() {
