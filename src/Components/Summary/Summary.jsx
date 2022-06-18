@@ -20,7 +20,7 @@ const Summary = () => {
               animate={
                 inView && {
                   y: 0,
-                }
+                } 
               }
               transition={{
                 duration: 1,
