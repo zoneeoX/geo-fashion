@@ -1,20 +1,18 @@
 import React from "react";
 import ItemsContainer from "./ItemsContainer";
-import SocialIcons from "./SocialIcons";
-import animate from "../../Images/animate.gif";
-import { Icons,MARQUEE } from "./Data";
 import Marquee from "react-fast-marquee";
+import zhongli from "../../Images/zhongli.png"
 const Footer = () => {
   return (
-    <footer className="bg-black text-white font-josef z-10">
+    <footer className="bg-slate-900 text-white font-josef z-10">
       <div className=" w-[96%] mx-auto">
         <div className="grid md:grid-cols-2  grid-cols-1">
           {/* image */}
           <div className="flex justify-around items-center ">
             <img
-              src={animate}
+              src={zhongli}
               alt=""
-              className="w-40 h-[348px] object-cover object-center"
+              className="w-full h-[348px] object-cover object-top brightness-75"
             />
           </div>
           {/* title */}
@@ -25,10 +23,10 @@ const Footer = () => {
             <h1 className="w-fit m-auto md:w-fit md:m-0 md:text-left text-center">
               <span className="md:text-left text-center">
                 Exotically stylish with
-                <span className="text-amber-500"> GEO</span> attire
+                <span className="text-amber-600"> GEO</span> attire
               </span>
             </h1>
-            <p className="text-base md:text-left text-center">
+            <p className="text-base md:text-left text-center  text-gray-400 ">
               GEO offers high quality attire with custom handmade models
               suitable to your preferences
             </p>
@@ -38,12 +36,11 @@ const Footer = () => {
             text-center pt-2  text-sm pb-8"
           >
             <h1 className="font-paci sm:text-4xl text-center text-3xl">
-              GEO PRODUCT
+              <span className="text-amber-600">GEO</span> PRODUCT
             </h1>
             <div className="text-gray-400 flex flex-col justify-center items-center">
               <span>© 2022 GEO. All rights reserved.</span>
               <span>Terms · Privacy Policy</span>
-              {/* <SocialIcons Icons={Icons} /> */}
             </div>
           </div>
           {/* item */}
@@ -52,19 +49,10 @@ const Footer = () => {
           </div>
         </div>
         <hr className="border-t-2 border-solid border-white my-4" />
-        {/* marquee */}
-        {/* <div className="uppercase whitespace-nowrap w-full overflow-hidden ">
-          <div className="animate-marquee inline-block pl-[100%] mb-4">
-            <h1 className="font-josef text-4xl">
-              MARQUEE <span>•</span> PANTS <span>•</span> PANTS <span>•</span>{" "}
-              <span>•</span> PANTS <span>•</span> PANTS <span>•</span> PANTS
-              <span>•</span> PANTS PANTS
-            </h1>
-          </div>
-        </div> */}
-        <Marquee gradientColor={[0, 0, 0]} className speed={100}>
+        <Marquee gradientColor={[15, 23, 42]} className speed={100}>
           <h1 className="font-josef text-4xl">
-            • SWEATSHIRT • PANTS • T-SHIRT • SHORTS • JACKET • SWEATER • HOODIE <span className="text-black w-0">.</span>
+            • SWEATSHIRT • PANTS • T-SHIRT • SHORTS • JACKET • SWEATER • HOODIE{" "}
+            <span className="text-black w-0">.</span>
           </h1>
         </Marquee>
       </div>

@@ -11,7 +11,7 @@ module.exports = {
           "100%": { transform: "translate(-100%,0)" },
         },
         marquee2: {
-          "0": { transform: "translate(-10%,0)" },
+          0: { transform: "translate(-10%,0)" },
         },
       },
       fontSize: {
@@ -31,8 +31,9 @@ module.exports = {
         p: "2vw",
       },
       fontFamily: {
-        paci: "Pacifico",
+        paci: "League Spartan",
         josef: "Josefin Sans",
+        script: "League Script",
       },
       backgroundImage: {
         bgs: "url('C:Trash/Code/ReactJs/sadam/src/Images/img1.jpg')",

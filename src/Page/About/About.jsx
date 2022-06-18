@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div className="wrapper font-josef">
         <header className="header">
-          <img src={img} className="background brightness-50" />
+          <img src={img} className="background brightness-50" alt="gambar" />
           <header>
             <section className="w-full h-full text-white ">
               <div className=" w-11/12  mx-auto ">

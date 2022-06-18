@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ({ Links, title }) => {
   return (
-    <ul>
+    <ul className="flex  flex-col w-[100px] sm:block sm:w-full">
       <h1 className="mb-1 font-semibold">{title}</h1>
       {Links.map((link) => (
         <li key={link.name}>

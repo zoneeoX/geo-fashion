@@ -17,10 +17,11 @@ const Summary = () => {
             ref={ref}
           >
             <motion.div
-              initial={{ y: "100vw" }}
+              initial={{ y: "100vw", opacity: 0 }}
               animate={
                 inView && {
                   y: 0,
+                  opacity: 1,
                 }
               }
               transition={{
@@ -41,6 +42,7 @@ const Summary = () => {
         )}
       </InView>
       <img
+        alt="gambar"
         src={Laptop}
         className="object-center object-cover h-full md:w-screen"
       />
@@ -110,7 +112,11 @@ const Summary = () => {
           </div>
         )}
       </InView>
-      <img src={Paper} className="object-center object-cover h-full" />
+      <img
+        src={Paper}
+        className="object-center object-cover h-full"
+        alt="gambar"
+      />
     </div>
   );
 };

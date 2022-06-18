@@ -1,8 +1,9 @@
-import React, { useRef, useState, useEffect } from "react";
+import React  from "react";
 import { scrollData } from "./Data";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/effect-creative";
 import {
   Scrollbar,
@@ -12,42 +13,40 @@ import {
   Pagination,
 } from "swiper";
 
-import { animate, AnimatePresence, motion } from "framer-motion";
-import { useAnimation } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import "./Verticool.css";
 
 export default function SnaptoScroll() {
   return (
     <>
-      <Swiper
-        speed={1000}
-        effect={"creative"}
-        creativeEffect={{
-          prev: {
-            // shadow: true,
-            translate: ["-20%", 0, -1],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        }}
-        scrollbar={true}
-        mousewheel={true}
-        navigation={true}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[
-          Scrollbar,
-          Mousewheel,
-          EffectCreative,
-          Navigation,
-          Pagination,
-        ]}
-        className="w-full h-full"
-      >
-        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 backdrop-blur-lg w-screen h-screen">
+      <div className="bg-slate-900 backdrop-blur-lg w-screen h-screen  md:block hidden">
+        <Swiper
+          speed={1000}
+          effect={"creative"}
+          creativeEffect={{
+            prev: {
+              // shadow: true,
+              translate: ["-20%", 0, -1],
+            },
+            next: {
+              translate: ["100%", 0, 0],
+            },
+          }}
+          scrollbar={true}
+          mousewheel={true}
+          navigation={true}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[
+            Scrollbar,
+            Mousewheel,
+            EffectCreative,
+            Navigation,
+            Pagination,
+          ]}
+          className="mySwiper"
+        >
           {scrollData.map(({ title, img, desc }, i) => (
             <SwiperSlide key={i}>
               {console.log(i)}
@@ -97,8 +96,8 @@ export default function SnaptoScroll() {
               </div>
             </SwiperSlide>
           ))}
-        </div>
-      </Swiper>
+        </Swiper>
+      </div>
     </>
   );
 }
