@@ -20,34 +20,34 @@ import { useInView } from "react-intersection-observer";
 export default function SnaptoScroll() {
   return (
     <>
-      <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 backdrop-blur-lg ">
-        <Swiper
-          speed={1000}
-          effect={"creative"}
-          creativeEffect={{
-            prev: {
-              // shadow: true,
-              translate: ["-20%", 0, -1],
-            },
-            next: {
-              translate: ["100%", 0, 0],
-            },
-          }}
-          scrollbar={true}
-          mousewheel={true}
-          navigation={true}
-          pagination={{
-            dynamicBullets: true,
-          }}
-          modules={[
-            Scrollbar,
-            Mousewheel,
-            EffectCreative,
-            Navigation,
-            Pagination,
-          ]}
-          className="w-screen h-screen "
-        >
+      <Swiper
+        speed={1000}
+        effect={"creative"}
+        creativeEffect={{
+          prev: {
+            // shadow: true,
+            translate: ["-20%", 0, -1],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        }}
+        scrollbar={true}
+        mousewheel={true}
+        navigation={true}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[
+          Scrollbar,
+          Mousewheel,
+          EffectCreative,
+          Navigation,
+          Pagination,
+        ]}
+        className="w-full h-full"
+      >
+        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 backdrop-blur-lg w-screen h-screen">
           {scrollData.map(({ title, img, desc }, i) => (
             <SwiperSlide key={i}>
               {console.log(i)}
@@ -97,8 +97,8 @@ export default function SnaptoScroll() {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
-      </div>
+        </div>
+      </Swiper>
     </>
   );
 }
