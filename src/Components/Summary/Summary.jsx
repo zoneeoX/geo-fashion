@@ -68,7 +68,7 @@ const Summary = () => {
               <h1 className="w-fit m-auto opacity-50 text-4xl">02</h1>
               <div className="flex justify-center items-center text-center flex-col gap-6">
                 <h2 className="sm:text-5xl text-xl">
-                  Panda & with a black hat?....
+                  Panda & with a black hat?..
                 </h2>
                 <p className="flex gap-2 items-center justify-center w-fit opacity-50 transition duration-200 hover:opacity-100 cursor-pointer">
                   About us.
